@@ -1,0 +1,117 @@
+/* Set the background color of the website */
+body {
+    background-color: #498B6D;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Hope Sans', sans-serif;
+}
+
+/* Style the square container */
+#image-container {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 40px); /* Adjust height to account for the bar */
+}
+
+/* Style for each square */
+#image-container .color-square {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    display: none;
+}
+
+/* Bottom bar styles */
+#bottom-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #FCF3E3;
+    color: #4D6AAA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+#site-title {
+    font-size: 16px;
+    margin-left: 2px;
+}
+
+/* Word-links and dots */
+#page-links {
+    display: flex;
+    gap: 10px;
+}
+
+.word-link {
+    text-decoration: none;
+    color: #4D6AAA;
+    font-size: 18px; /* Consistent font size */
+    font-family: 'Hope Sans', sans-serif !important; /* Force apply font */
+}
+
+.word-link:hover, .word-link.active {
+    text-decoration: underline;
+    color: #498B6D;
+}
+
+.dot {
+    color: #4D6AAA;
+    font-size: 20px; /* Adjusted to match design */
+}
+
+/* Counter styles */
+#counter {
+    font-size: 18px;
+    margin: 2px;
+    color: #4D6AAA;
+    font-weight: bold;
+    font-family: 'Hope Sans', sans-serif !important;
+}
+
+/* Threshold element styles */
+#threshold {
+    display: flex;
+    align-items: center;
+}
+
+#threshold-value {
+    margin: 0 5px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Hope Sans', sans-serif !important;
+}
+
+button {
+    font-size: 18px;
+    padding: 2px 6px;
+    margin: 0 2px;
+    background-color: #4D6AAA;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    font-family: 'Hope Sans', sans-serif !important;
+}
+
+button:disabled {
+    background-color: #999999;
+    cursor: not-allowed;
+}
+
+/* Font face declaration */
+@font-face {
+    font-family: 'Hope Sans';
+    src: url('/fonts/Hope%20Sans%20Thin.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Global font application */
+body, h1, h2, h3, p, a, button, span, div, #counter, #threshold-value, .word-link {
+    font-family: 'Hope Sans', sans-serif !important;
+}
